@@ -1,0 +1,7 @@
+OpenCode Image Generation
+
+Portions of src/image-generation.ts are derived from:
+https://github.com/VertexToEdge/pi-codex-image-gen
+
+The original and adapted code are licensed under the Apache License, Version 2.0.
+A copy of that license is included in LICENSE.

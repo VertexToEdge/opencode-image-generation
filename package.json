@@ -1,0 +1,46 @@
+{
+  "name": "opencode-image-generation",
+  "version": "0.1.0",
+  "description": "Image generation and editing for OpenCode through OpenAI-compatible Responses APIs.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "author": "VertexToEdge",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VertexToEdge/opencode-image-generation.git"
+  },
+  "homepage": "https://github.com/VertexToEdge/opencode-image-generation#readme",
+  "bugs": {
+    "url": "https://github.com/VertexToEdge/opencode-image-generation/issues"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "skills", "README.md", "LICENSE", "NOTICE"],
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "sharp": "^0.35.5"
+  },
+  "peerDependencies": {
+    "@opencode-ai/plugin": "^1.19.4"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "1.19.4",
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  },
+  "keywords": ["opencode", "opencode-plugin", "image-generation", "image-editing", "openai-compatible", "responses-api"]
+}
